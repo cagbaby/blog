@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 轩博文</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id="theme-style" href="theme-light.css">
+</head>
+<body>
+    <header>
+        <h1>轩博文 <span class="subtitle">// 21103020213</span></h1>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="index1.html">主页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="hobbies.html">爱好</a></li>
+                <li><a href="contact.html" class="active">联系</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">切换主题</button>
+    </header>
+
+    <main>
+        <a href="javascript:history.back()" class="back-button">← 返回</a>
+        
+        <section class="content">
+            <h2>联系轩博文</h2>
+            
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>电子邮件</h3>
+                    <p>mackxuan@qq.com</p>
+                    <a href="mailto:xuanbowen@example.com" class="contact-button">发送邮件</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>电话</h3>
+                    <p>假装这里有一个电话</p>
+                    <!-- <a href="https://github.com/xuanbowen" target="_blank" class="contact-button">访问主页</a> -->
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🎮</div>
+                    <h3>原神UID</h3>
+                    <p>2126668743</p>
+                    <button class="contact-button" id="copy-uid">复制UID</button>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <h3>直接留言</h3>
+                <div class="form-group">
+                    <label for="name">你的名字</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮箱</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">留言内容</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button" id="btn1">发送留言</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 轩博文 - 用代码和原神填满生活</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('copy-uid').addEventListener('click', function() {
+            navigator.clipboard.writeText('2126668743');
+            this.textContent = '已复制!';
+            setTimeout(() => {
+                this.textContent = '复制UID';
+            }, 2000);
+        });
+        window.onload = function() {
+            var button = document.getElementById("btn1");
+            button.addEventListener("click", function() {
+                alert("我不听(」＞＜)」");
+            });
+        };
+    </script>
+</body>
+</html>
