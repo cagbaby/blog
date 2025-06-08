@@ -1,0 +1,67 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --primary-color: #6b8cae;
+    --secondary-color: #4a6fa5;
+    --accent-color: #ff9f87;
+    --hover-color: #8fb3d9;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dropdown-menu a {
+    color: var(--primary-color);
+    background-color: var(--card-bg);
+}
+
+.dropdown-menu a:hover, .dropdown-menu li:hover > a {
+    color: var(--hover-color);
+    background-color: rgba(107, 140, 174, 0.2);
+}
+
+.dropdown-menu li ul {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.hobby-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#theme-toggle {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+#theme-toggle:hover {
+    background-color: var(--hover-color);
+}
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #100e0e;
+    color: #cacaca;
+    padding: 10px 0;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
