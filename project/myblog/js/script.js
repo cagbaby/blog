@@ -133,18 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeStyle = document.getElementById('theme-style');
     
     themeToggle.addEventListener('click', function() {
-        if (themeStyle.getAttribute('href') === 'theme-light.css') {
-            themeStyle.setAttribute('href', 'theme-dark.css');
+        if (themeStyle.getAttribute('href') === '../css/theme-light.css') {
+            themeStyle.setAttribute('href', '../css/theme-dark.css');
             localStorage.setItem('theme', 'dark');
         } else {
-            themeStyle.setAttribute('href', 'theme-light.css');
+            themeStyle.setAttribute('href', '../css/theme-light.css');
             localStorage.setItem('theme', 'light');
         }
     });
     
     // 检查本地存储中的主题偏好
     const savedTheme = localStorage.getItem('theme') || 'light';
-    themeStyle.setAttribute('href', `theme-${savedTheme}.css`);
+    themeStyle.setAttribute('href', `../css/theme-${savedTheme}.css`);
     
     // 初始化时间显示
     initTimeDisplay();
