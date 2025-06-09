@@ -1,24 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style >
-        .back-button {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            margin-bottom: 1rem;
-            text-decoration: none;
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-    </style>
+    <title>性格分析 - 轩博文</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" id="theme-style" href="../css/theme-light.css">
 </head>
 <body>
-    所以这里应该空空如也吗？
-    <a href="javascript:history.back()" class="back-button">← 返回</a>
+    <header>
+        <h1>轩博文 <span class="subtitle">// 21103020213</span></h1>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="hobbies.html">爱好</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">切换主题</button>
+    </header>
+
+    <main>
+        <a href="hobbies.html" class="back-button">← 返回爱好</a>
+        
+        <section class="content">
+            <h2>代码艺术</h2>
+            <p>极简逻辑创造视觉奇观、用数据规律生成有机美感、将数学公式变为动态诗篇、化机械操作为禅意表达</p>
+            <div class="personality-traits">
+                <div class="trait-card">
+                    <h3><a href="forest.html">分形递归树</a></h3>
+                    <p><a href="forest.html">
+                        5行代码的森林</a>
+                    </p>
+                </div>
+                <div class="trait-card">
+                    <h3><a href="life.html">康威生命游戏</a></h3>
+                    <p><a href="life.html">
+                        零玩家动态艺术</a>
+                    </p>
+                </div>
+                <div class="trait-card">
+                    <h3><a href="fourier.html">傅里叶级数绘图</a></h3>
+                    <p><a href="fourier.html">
+                        数学的舞蹈</a>
+                    </p>
+                </div>
+                <div class="trait-card">
+                    <h3><a href="text.html">文本进度条</a></h3>
+                    <p><a href="text.html">
+                        等待的禅意</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="entp-quote">
+                <blockquote>
+                    "我喜欢的东西有很多，但我最喜欢的是探索未知的边界。所以，我喜欢的是这个世界"
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 轩博文 - 用代码和原神填满生活</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
