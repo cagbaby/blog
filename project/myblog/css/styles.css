@@ -322,3 +322,13 @@ blockquote {
         transform: translateX(-100%); 
     }
 }
+
+a {
+    color:#333
+}
+
+img{
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
